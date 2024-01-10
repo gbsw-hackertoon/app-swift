@@ -25,6 +25,11 @@ struct Tab: View{
                             Image(systemName: "book")
                             Text("내 서재")
                         }
+                    lillayView()
+                        .tabItem {
+                            Image(systemName: "figure.run")
+                            Text("릴레이 소설")
+                        }
                     userView()
                         .tabItem {
                             Image(systemName: "person")

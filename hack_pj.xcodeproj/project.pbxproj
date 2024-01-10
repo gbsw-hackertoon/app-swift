@@ -19,6 +19,7 @@
 		677E44C62B4E7DF8002819E4 /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677E44C52B4E7DF8002819E4 /* MainPageView.swift */; };
 		677E44C82B4EB502002819E4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677E44C72B4EB502002819E4 /* LoginView.swift */; };
 		677E44CA2B4EB584002819E4 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677E44C92B4EB584002819E4 /* SignupView.swift */; };
+		677E44CC2B4EFF20002819E4 /* lillayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677E44CB2B4EFF20002819E4 /* lillayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		677E44C52B4E7DF8002819E4 /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
 		677E44C72B4EB502002819E4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		677E44C92B4EB584002819E4 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		677E44CB2B4EFF20002819E4 /* lillayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lillayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				677E44C52B4E7DF8002819E4 /* MainPageView.swift */,
 				677E44C72B4EB502002819E4 /* LoginView.swift */,
 				677E44C92B4EB584002819E4 /* SignupView.swift */,
+				677E44CB2B4EFF20002819E4 /* lillayView.swift */,
 				676354B22B4CD234005D4396 /* Assets.xcassets */,
 				676354B42B4CD234005D4396 /* Preview Content */,
 			);
@@ -167,6 +170,7 @@
 				677E44C82B4EB502002819E4 /* LoginView.swift in Sources */,
 				677E44CA2B4EB584002819E4 /* SignupView.swift in Sources */,
 				677E44C22B4DAB00002819E4 /* createView.swift in Sources */,
+				677E44CC2B4EFF20002819E4 /* lillayView.swift in Sources */,
 				677E44C02B4D8EA4002819E4 /* userView.swift in Sources */,
 				676354AF2B4CD234005D4396 /* hack_pjApp.swift in Sources */,
 				677E44BE2B4D8E4C002819E4 /* WorkView.swift in Sources */,

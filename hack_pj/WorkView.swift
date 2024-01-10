@@ -9,7 +9,18 @@ import SwiftUI
 
 struct WorkView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Text("내 서재")
+                .padding(.bottom,20)
+            HStack{
+                Text("내가 쓴작품")
+                    .bold()
+                    .font(.system(size: 20))
+                Spacer()
+            }.padding()
+            
+            Spacer()
+        }
     }
 }
 

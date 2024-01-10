@@ -88,7 +88,35 @@ struct homeView: View {
                 }
                 ScrollView{
                     HStack{
-                        Text("asdf")
+                        Text("최신 소설")
+                            .bold()
+                            .font(.system(size: 22))
+                            .padding()
+                        Spacer()
+                            
+                    }
+                    HStack{
+                        Image("test")
+                            .resizable()
+                            .frame(width: 80,height: 100)
+                            .cornerRadius(10)
+                            .padding([.leading],15)
+                        VStack(spacing:10){
+                            Text("검은 기억의 파편")
+                                .font(.system(size: 18))
+                                .bold()
+                            Text("바람숲")
+                            VStack{
+                                Text("판타지")
+                                    .padding(EdgeInsets(top: 5, leading: 10, bottom: 5, trailing: 10))
+                                    .foregroundStyle(Color.orange)
+                                    .background(Color.pink.opacity(0.1))
+                                    .cornerRadius(20)
+                                Spacer()
+                            }
+                        }
+                        .padding()
+                        Spacer()
                     }
                 }
                 
