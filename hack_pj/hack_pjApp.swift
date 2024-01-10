@@ -11,7 +11,7 @@ import SwiftUI
 struct hack_pjApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Tab()
         }
     }
 }

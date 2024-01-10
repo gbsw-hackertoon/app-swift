@@ -11,8 +11,10 @@
 		676354B12B4CD234005D4396 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676354B02B4CD234005D4396 /* ContentView.swift */; };
 		676354B32B4CD234005D4396 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 676354B22B4CD234005D4396 /* Assets.xcassets */; };
 		676354B62B4CD234005D4396 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 676354B52B4CD234005D4396 /* Preview Assets.xcassets */; };
-		677E44B82B4D6223002819E4 /* WorkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677E44B72B4D6223002819E4 /* WorkView.swift */; };
-		677E44BA2B4D88CE002819E4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677E44B92B4D88CE002819E4 /* MainView.swift */; };
+		677E44BC2B4D8D01002819E4 /* homeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677E44BB2B4D8D01002819E4 /* homeView.swift */; };
+		677E44BE2B4D8E4C002819E4 /* WorkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677E44BD2B4D8E4C002819E4 /* WorkView.swift */; };
+		677E44C02B4D8EA4002819E4 /* userView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677E44BF2B4D8EA4002819E4 /* userView.swift */; };
+		677E44C22B4DAB00002819E4 /* createView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677E44C12B4DAB00002819E4 /* createView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,8 +23,10 @@
 		676354B02B4CD234005D4396 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		676354B22B4CD234005D4396 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		676354B52B4CD234005D4396 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		677E44B72B4D6223002819E4 /* WorkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkView.swift; sourceTree = "<group>"; };
-		677E44B92B4D88CE002819E4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		677E44BB2B4D8D01002819E4 /* homeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeView.swift; sourceTree = "<group>"; };
+		677E44BD2B4D8E4C002819E4 /* WorkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkView.swift; sourceTree = "<group>"; };
+		677E44BF2B4D8EA4002819E4 /* userView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userView.swift; sourceTree = "<group>"; };
+		677E44C12B4DAB00002819E4 /* createView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +61,10 @@
 			children = (
 				676354AE2B4CD234005D4396 /* hack_pjApp.swift */,
 				676354B02B4CD234005D4396 /* ContentView.swift */,
-				677E44B72B4D6223002819E4 /* WorkView.swift */,
-				677E44B92B4D88CE002819E4 /* MainView.swift */,
+				677E44BB2B4D8D01002819E4 /* homeView.swift */,
+				677E44BD2B4D8E4C002819E4 /* WorkView.swift */,
+				677E44BF2B4D8EA4002819E4 /* userView.swift */,
+				677E44C12B4DAB00002819E4 /* createView.swift */,
 				676354B22B4CD234005D4396 /* Assets.xcassets */,
 				676354B42B4CD234005D4396 /* Preview Content */,
 			);
@@ -144,9 +150,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				676354B12B4CD234005D4396 /* ContentView.swift in Sources */,
-				677E44BA2B4D88CE002819E4 /* MainView.swift in Sources */,
-				677E44B82B4D6223002819E4 /* WorkView.swift in Sources */,
+				677E44BC2B4D8D01002819E4 /* homeView.swift in Sources */,
+				677E44C22B4DAB00002819E4 /* createView.swift in Sources */,
+				677E44C02B4D8EA4002819E4 /* userView.swift in Sources */,
 				676354AF2B4CD234005D4396 /* hack_pjApp.swift in Sources */,
+				677E44BE2B4D8E4C002819E4 /* WorkView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
