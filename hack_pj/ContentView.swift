@@ -25,19 +25,23 @@ struct Tab: View{
                             Image(systemName: "book")
                             Text("내 서재")
                         }
+                        .tag(2)
                     lillayView()
                         .tabItem {
                             Image(systemName: "figure.run")
                             Text("릴레이 소설")
                         }
+                        .tag(3)
                     userView()
                         .tabItem {
                             Image(systemName: "person")
                             Text("계정")
                         }
+                        .tag(4)
                 }
             }
         }
+        .navigationBarBackButtonHidden()
     }
 }
 
