@@ -1,20 +1,15 @@
-//
-//  SuccessView.swift
-//  hack_pj
-//
-//  Created by 박성민 on 1/10/24.
-//
-
 import SwiftUI
 
 struct SuccessView: View {
     var image: UIImage?
     var title: String
     var selectedTags: Set<String> = []
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     var body: some View {
         VStack{
             Text("등록 완료")
-                .navigationBarBackButtonHidden()
+                .navigationBarBackButtonHidden(true)
             Spacer()
             Text("등록이 완료되었습니다.")
                 .bold()
@@ -47,7 +42,7 @@ struct SuccessView: View {
             Spacer()
             HStack{
                 Button{
-                    
+                    self.presentationMode.wrappedValue.dismiss()
                 }label: {
                     Text("돌아가기")
                         .bold()
@@ -71,7 +66,6 @@ struct SuccessView: View {
         }
     }
 }
-
 #if DEBUG
 struct SuccessView_Previews: PreviewProvider {
     static var previews: some View {
@@ -81,5 +75,5 @@ struct SuccessView_Previews: PreviewProvider {
             selectedTags: ["Tag1", "Tag2"]
         )
     }
-}
+    }
 #endif

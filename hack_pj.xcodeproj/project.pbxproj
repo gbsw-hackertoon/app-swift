@@ -16,6 +16,7 @@
 		677E44C02B4D8EA4002819E4 /* userView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677E44BF2B4D8EA4002819E4 /* userView.swift */; };
 		677E44C22B4DAB00002819E4 /* createView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677E44C12B4DAB00002819E4 /* createView.swift */; };
 		677E44C42B4E66CF002819E4 /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677E44C32B4E66CF002819E4 /* SuccessView.swift */; };
+		677E44C62B4E7DF8002819E4 /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677E44C52B4E7DF8002819E4 /* MainPageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		677E44BF2B4D8EA4002819E4 /* userView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userView.swift; sourceTree = "<group>"; };
 		677E44C12B4DAB00002819E4 /* createView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createView.swift; sourceTree = "<group>"; };
 		677E44C32B4E66CF002819E4 /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
+		677E44C52B4E7DF8002819E4 /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				677E44BF2B4D8EA4002819E4 /* userView.swift */,
 				677E44C12B4DAB00002819E4 /* createView.swift */,
 				677E44C32B4E66CF002819E4 /* SuccessView.swift */,
+				677E44C52B4E7DF8002819E4 /* MainPageView.swift */,
 				676354B22B4CD234005D4396 /* Assets.xcassets */,
 				676354B42B4CD234005D4396 /* Preview Content */,
 			);
@@ -154,6 +157,7 @@
 			files = (
 				676354B12B4CD234005D4396 /* ContentView.swift in Sources */,
 				677E44BC2B4D8D01002819E4 /* homeView.swift in Sources */,
+				677E44C62B4E7DF8002819E4 /* MainPageView.swift in Sources */,
 				677E44C22B4DAB00002819E4 /* createView.swift in Sources */,
 				677E44C02B4D8EA4002819E4 /* userView.swift in Sources */,
 				676354AF2B4CD234005D4396 /* hack_pjApp.swift in Sources */,

@@ -13,7 +13,7 @@ struct CreateView: View {
     @State private var alertMessage = ""
     @State private var issucces = false
     var body: some View {
-        NavigationView{
+        NavigationStack{
             VStack{
                 Text("작품 등록")
                 ZStack {
