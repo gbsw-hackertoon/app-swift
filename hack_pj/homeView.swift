@@ -40,7 +40,7 @@ struct homeView: View {
                             .font(.system(size: 25))
                             .padding([.leading],10)
                     }
-                    NavigationLink(destination: createView(), isActive: $gocreate){
+                    NavigationLink(destination: CreateView(), isActive: $gocreate){
                         EmptyView()
                     }
                 }
