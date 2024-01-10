@@ -6,11 +6,30 @@
 //
 
 import SwiftUI
+import Alamofire
 
 struct SignupView: View {
     @State var id = ""
     @State var pw = ""
     @State var email = ""
+    @State var isSignupComplete = false
+
+    func signup() {
+        let url = "http://localhost:3000/user/signup"
+        let parameters: [String: Any] = ["username": id, "password": pw, "email": email]
+        AF.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default)
+            .response{ response in
+                switch response.result {
+                case .success(let value):
+                    // 응답 성공 시 처리할 코드 작성
+                    debugPrint(value)
+                    self.isSignupComplete = true
+                case .failure(let error):
+                    // 응답 실패 시 처리할 코드 작성
+                    debugPrint(error)
+                }
+            }
+    }
     var body: some View {
         NavigationStack{
             VStack{
@@ -71,13 +90,15 @@ struct SignupView: View {
                 }
                 Spacer()
                 VStack{
-                    NavigationLink(destination: SignupView()){
-                        Text("로그인")
-                            .bold()
-                            .foregroundStyle(.white)
-                            .padding(EdgeInsets(top: 15, leading: 140, bottom: 15, trailing: 140))
-                            .background(Color.orange)
-                            .cornerRadius(5)
+                    NavigationLink(destination: MainPageView(), isActive: $isSignupComplete) {
+                        Button(action: signup) {
+                            Text("회원가입")
+                                .bold()
+                                .foregroundStyle(.white)
+                                .padding(EdgeInsets(top: 15, leading: 140, bottom: 15, trailing: 140))
+                                .background(Color.orange)
+                                .cornerRadius(5)
+                        }
                     }
                 }.padding(.bottom,1)
             }

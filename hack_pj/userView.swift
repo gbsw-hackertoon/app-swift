@@ -18,7 +18,7 @@ struct userView: View {
                 VStack{
                     Text("활동명")
                         .font(.system(size: 14))
-                    Text("노무현")
+                    Text("박성민")
                         .bold()
                 }
                 Spacer()

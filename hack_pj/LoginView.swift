@@ -6,10 +6,26 @@
 //
 
 import SwiftUI
+import Alamofire
 
 struct LoginView: View {
     @State var id = ""
     @State var pw = ""
+    @State var isSignupComplete = false
+    func login(){
+        let url = "http://localhost:3000/user/signin"
+        let parameter: [String:Any] = ["username":id,"password":pw]
+        AF.request(url,method: .post,parameters: parameter,encoding: JSONEncoding.default)
+            .response{ response in
+                switch response.result {
+                case .success(let value):
+                    debugPrint(value)
+                    self.isSignupComplete = true
+                case .failure(let error):
+                    debugPrint(error)
+                }
+            }
+    }
     var body: some View {
         NavigationStack{
             VStack{
@@ -61,14 +77,17 @@ struct LoginView: View {
                 }.padding([.top],40)
                 Spacer()
                 VStack{
-                    NavigationLink(destination: SignupView()){
-                        Text("로그인")
-                            .bold()
-                            .foregroundStyle(.white)
-                            .padding(EdgeInsets(top: 15, leading: 140, bottom: 15, trailing: 140))
-                            .background(Color.orange)
-                            .cornerRadius(5)
+                    NavigationLink(destination: Tab(), isActive: $isSignupComplete) {
+                        Button(action: login) {
+                            Text("로그인")
+                                .bold()
+                                .foregroundStyle(.white)
+                                .padding(EdgeInsets(top: 15, leading: 140, bottom: 15, trailing: 140))
+                                .background(Color.orange)
+                                .cornerRadius(5)
+                        }
                     }
+
                 }.padding(.bottom,1)
             }
         }
