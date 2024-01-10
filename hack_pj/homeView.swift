@@ -9,7 +9,6 @@ import SwiftUI
 
 struct homeView: View {
     @State var search: String = ""
-    @State var gocreate = false
     var body: some View {
         NavigationStack{
             VStack {
@@ -32,16 +31,11 @@ struct homeView: View {
                     }
                     .background(RoundedRectangle(cornerRadius: 10).fill(Color.white))
                     .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray))
-                    Button{
-                        self.gocreate = true
-                    }label: {
+                    NavigationLink(destination: CreateView()) {
                         Image(systemName: "applepencil.and.scribble")
                             .foregroundColor(.black)
                             .font(.system(size: 25))
                             .padding([.leading],10)
-                    }
-                    NavigationLink(destination: CreateView(), isActive: $gocreate){
-                        EmptyView()
                     }
                 }
                 .padding(EdgeInsets(top: 0, leading: 20, bottom: 20, trailing: 20))

@@ -75,5 +75,5 @@ struct SuccessView_Previews: PreviewProvider {
             selectedTags: ["Tag1", "Tag2"]
         )
     }
-    }
+}
 #endif

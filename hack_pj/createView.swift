@@ -150,20 +150,17 @@ struct CreateView: View {
                         .background(Color.gray.opacity(0.3))
                         .cornerRadius(10)
                 }
+                .sheet(isPresented: $issucces){
+                    SuccessView(
+                        image: image,
+                        title: title,
+                        selectedTags: selectTag
+                    )
+                }
                 .alert(isPresented: $showingAlert){
                     Alert(title: Text("오류"),message:Text(alertMessage),dismissButton: .default(Text("확인")))
                 }
                 .padding([.top],30)
-                if(issucces){
-                    NavigationLink(
-                        destination: SuccessView(image: image, title: title, selectedTags: selectTag),
-                        isActive: $issucces
-                    )
-                    {
-                        EmptyView()
-                    }
-                    Spacer()
-                }
             }
             .padding()
         }
